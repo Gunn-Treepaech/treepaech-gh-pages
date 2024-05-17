@@ -3,4 +3,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    font-size: large;
+}
+
+.contactTitle {
+    font-weight: bold;
+}
+
+.form-container{
+    font-weight: bold;
 }

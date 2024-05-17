@@ -4,7 +4,7 @@ import "./AboutMeTXT.css"
 export default function AboutMe() {
   return (
     <div
-      className="details"
+      className=""
       style={{
         position: "absolute",
         left: "40%",

@@ -1,0 +1,8 @@
+.navbarItem {
+  text-decoration: none;
+  color: #a8a8a8;
+}
+
+.navbarItem:hover {
+  color: #ffffff;
+}
