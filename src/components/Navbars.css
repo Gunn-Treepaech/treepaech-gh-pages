@@ -1,8 +1,18 @@
-.navbarItem {
-  text-decoration: none;
-  color: #a8a8a8;
+.nav-link:hover {
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+  color: #ffffff;
 }
 
-.navbarItem:hover {
-  color: #ffffff;
+.nav-link {
+  transition: all 0.3s ease;
+  font-weight: bold;
+  margin-right: 30px
+}
+
+.HeadNavbar{
+  font-weight: bold;
+}
+
+.contactButton{
+  font-weight: bold;
 }

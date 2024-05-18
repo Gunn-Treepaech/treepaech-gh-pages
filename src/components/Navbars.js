@@ -3,8 +3,9 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Offcanva from "./Offcanvas";
 import { useState } from "react";
-// import { Link } from "react-router-dom";
 import "./Navbars.css";
+import { Link } from "react-scroll";
+import Button from "react-bootstrap/Button";
 
 export default function Navbar_component() {
   const [showOffcanvas, setShowOffcanvas] = useState(false);
@@ -14,17 +15,28 @@ export default function Navbar_component() {
 
   return (
     <>
-      <Navbar expand="lg" className="bg-body-tertiary" data-bs-theme="dark">
+      <Navbar
+        expand="lg"
+        className="bg-body-tertiary"
+        data-bs-theme="dark"
+        fixed="top"
+      >
         <Container>
-          <Navbar.Brand href="/">Gunn'Treepaech</Navbar.Brand>
+          <Navbar.Brand href="/">
+            <h3 className="HeadNavbar">Gunn'Treepaech</h3>
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto">
-              <Nav.Link href="/">Home</Nav.Link>
-              <Nav.Link href="/about">About Me</Nav.Link>
-              <Nav.Link className="navbarItem" onClick={handleShowOffcanvas}>
+            <Nav className="ms-auto">
+              <Link smooth to="home" className="nav-link">
+                Home
+              </Link>
+              <Link smooth to="about" className="nav-link">
+                About Me
+              </Link>
+              <Button className="contactButton" variant="primary" onClick={handleShowOffcanvas}>
                 Contact Me
-              </Nav.Link>
+              </Button>
             </Nav>
           </Navbar.Collapse>
         </Container>

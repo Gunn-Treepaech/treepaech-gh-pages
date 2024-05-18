@@ -8,7 +8,9 @@ export default function App() {
   return (
     <div className="app">
       <Navbars />
-      <AboutMe />
+      <section id="home">Home</section>
+      {/* <AboutMe /> */}
+      <section id="about">About Me</section>
     </div>
   );
 }
