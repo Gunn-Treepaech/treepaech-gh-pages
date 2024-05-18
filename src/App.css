@@ -1,22 +1,2 @@
-section {
-  display: grid;
-  place-items: center;
-  height: 100vh;
-  font-size: 32px;
-  font-weight: bold;
-}
 
-.App {
-  font-family: sans-serif;
-  text-align: center;
-}
 
-#about {
-  margin-top: -80px;
-}
-
-#projects,
-#contact {
-  color: #3b3b3c;
-  background: #eaf2fa;
-}

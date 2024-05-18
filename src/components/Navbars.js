@@ -4,14 +4,17 @@ import Navbar from "react-bootstrap/Navbar";
 import Offcanva from "./Offcanvas";
 import { useState } from "react";
 import "./Navbars.css";
-import { Link } from "react-scroll";
 import Button from "react-bootstrap/Button";
 
-export default function Navbar_component() {
+export default function Navbar_component({ homeRef, aboutRef }) {
   const [showOffcanvas, setShowOffcanvas] = useState(false);
 
   const handleShowOffcanvas = () => setShowOffcanvas(true);
   const handleCloseOffcanvas = () => setShowOffcanvas(false);
+
+  const scrollToSection = (ref) => {
+    ref.current.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <>
@@ -19,7 +22,7 @@ export default function Navbar_component() {
         expand="lg"
         className="bg-body-tertiary"
         data-bs-theme="dark"
-        fixed="top"
+        // fixed="top"
       >
         <Container>
           <Navbar.Brand href="/">
@@ -28,13 +31,15 @@ export default function Navbar_component() {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
-              <Link smooth to="home" className="nav-link">
-                Home
-              </Link>
-              <Link smooth to="about" className="nav-link">
+              <Nav.Link onClick={() => scrollToSection(homeRef)}>Home</Nav.Link>
+              <Nav.Link onClick={() => scrollToSection(aboutRef)}>
                 About Me
-              </Link>
-              <Button className="contactButton" variant="primary" onClick={handleShowOffcanvas}>
+              </Nav.Link>
+              <Button
+                className="contactButton"
+                variant="primary"
+                onClick={handleShowOffcanvas}
+              >
                 Contact Me
               </Button>
             </Nav>

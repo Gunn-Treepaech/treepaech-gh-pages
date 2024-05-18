@@ -1,11 +1,10 @@
 import React from "react";
-import Navbars from "../components/Navbars";
+import "./AboutMePage.css"
 
 export default function AboutMe() {
   return (
-    <>
-      <Navbars />
+    <div className="aboutSec">
       <h2>Hello</h2>
-    </>
+    </div>
   );
 }

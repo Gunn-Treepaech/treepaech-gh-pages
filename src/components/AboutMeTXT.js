@@ -1,20 +1,12 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./AboutMeTXT.css"
+import "./AboutMeTXT.css";
 
-export default function AboutMe() {
+export default function AboutMeTXt() {
   return (
-    <div
-      className=""
-      style={{
-        position: "absolute",
-        left: "40%",
-        top: "50%",
-        transform: "translate(-50%, -50%)",
-      }}
-    >
-      <h1>Hello!!!</h1>
-      <h1>My Name Is</h1>
-      <h1>Treepaech Treechan</h1>
+    <div className="homeSec">
+      <h1 className="aboutMetxt">Hello!!!</h1>
+      <h1 className="aboutMetxt">My Name Is </h1>
+      <h1 className="aboutMetxt">Treepaech Treechan</h1>
       <p className="aboutMetxt">
         A recent graduate with a Bachelor's degree in Computer Engineering from
         Khon Kaen University, who is determined to apply the knowledge gained
