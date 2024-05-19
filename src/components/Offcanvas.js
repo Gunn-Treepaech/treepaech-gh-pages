@@ -72,7 +72,7 @@ export default function Offcanva({ show, handleClose }) {
               </Form>
             </div>
           </div>
-          <div class="social">
+          <div className="social">
             <SocialFollow />
           </div>
         </Offcanvas.Body>
