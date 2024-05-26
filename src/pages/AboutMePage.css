@@ -5,6 +5,11 @@
   margin-bottom: 50px;
 }
 
+.aboutSec h1 {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bolder;
+}
+
 .cardShows {
   display: flex;
   justify-content: center;

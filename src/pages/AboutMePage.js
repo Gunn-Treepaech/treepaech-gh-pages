@@ -21,7 +21,7 @@ export default function AboutMe() {
           className = "card"
         />
         <CardKitchenSink
-          titleName={"Gun Test"}
+          titleName={"Senior Project"}
           cardText={"Treepaech"}
           cardImg={cat}
           className = "card"
