@@ -12,7 +12,7 @@ export default function CardKitchenSink({ titleName, cardText, cardImg, onButton
         </Card.Text>
       </Card.Body>
       <Card.Body>
-        <Button variant="primary" className="cardButton" onClick={onButtonClick}>Go somewhere</Button>
+        <Button variant="primary" className="cardButton" onClick={onButtonClick}>Show More</Button>
       </Card.Body>
     </Card>
   );
