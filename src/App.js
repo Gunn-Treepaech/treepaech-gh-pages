@@ -15,11 +15,9 @@ export default function App() {
       <div id="home" ref={homeRef} className="homeSec">
         <AboutMeTXT />
       </div>
-      {/* <div style={{ height: 1000, border: "1px solid black" }}></div> */}
       <div id="about" ref={aboutRef}>
         <AboutMePage />
       </div>
-      <div style={{ height: 1000}}></div>
     </div>
   );
 }
