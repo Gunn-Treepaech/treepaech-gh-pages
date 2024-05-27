@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/treepaech-gh-pages/static/css/main.5137138b.css",
-    "main.js": "/treepaech-gh-pages/static/js/main.e3b2d8a3.js",
+    "main.css": "/treepaech-gh-pages/static/css/main.15cbe61e.css",
+    "main.js": "/treepaech-gh-pages/static/js/main.85e89977.js",
     "static/js/453.594335cf.chunk.js": "/treepaech-gh-pages/static/js/453.594335cf.chunk.js",
     "static/media/Internship.jpg": "/treepaech-gh-pages/static/media/Internship.b545297482fdaadad52d.jpg",
     "static/media/cat3.jpeg": "/treepaech-gh-pages/static/media/cat3.53b768d5e219210a19a0.jpeg",
     "index.html": "/treepaech-gh-pages/index.html",
-    "main.5137138b.css.map": "/treepaech-gh-pages/static/css/main.5137138b.css.map",
-    "main.e3b2d8a3.js.map": "/treepaech-gh-pages/static/js/main.e3b2d8a3.js.map",
+    "main.15cbe61e.css.map": "/treepaech-gh-pages/static/css/main.15cbe61e.css.map",
+    "main.85e89977.js.map": "/treepaech-gh-pages/static/js/main.85e89977.js.map",
     "453.594335cf.chunk.js.map": "/treepaech-gh-pages/static/js/453.594335cf.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5137138b.css",
-    "static/js/main.e3b2d8a3.js"
+    "static/css/main.15cbe61e.css",
+    "static/js/main.85e89977.js"
   ]
 }
