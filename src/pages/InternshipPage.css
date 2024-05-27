@@ -23,10 +23,10 @@
 
 .internship-content {
     position: relative;
-    max-width: 1200px;
+    max-width: 1500px;
     background-color: black;
     overflow-y: auto;
-    height: 90vh;
+    height: 80vh;
     padding: 20px;
     z-index: 1000;
     border-radius: 8px;
@@ -38,4 +38,19 @@
     max-height: calc(100vh - 120px);
     margin-left: auto;
     margin-right: auto;
+}
+
+.internship-content p{
+    color: white;
+    justify-content: center;
+    display: flex;
+    margin: 20px 0 20px 0;
+}
+
+.internship-content a{
+    color: white;
+    justify-content: center;
+    display: flex;
+    margin: 20px 0 20px 0;
+    font-weight: bolder;
 }
