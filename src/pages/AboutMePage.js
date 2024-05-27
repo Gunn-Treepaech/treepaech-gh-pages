@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+//AboutMePage.js
+import React, { useState, useEffect } from "react";
 import "./AboutMePage.css";
 import CardKitchenSink from "../components/CardKitchenSink";
-import "bootstrap/dist/css/bootstrap.min.css";
 import InternshipPage from "./InternshipPage";
+import SeniorProject from "./SeniorProject";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 // Images
 import Internship from "../image/Internship.jpg";
@@ -10,13 +12,34 @@ import cat from "../image/cat3.jpeg";
 
 export default function AboutMe() {
   const [showInternship, setShowInternship] = useState(false);
+  const [showSeniorProject, setShowSeniorProject] = useState(false);
+
+  useEffect(() => {
+    if (showInternship || showSeniorProject) {
+      document.body.classList.add("no-scroll");
+    } else {
+      document.body.classList.remove("no-scroll");
+    }
+
+    // Cleanup on unmount
+    return () => {
+      document.body.classList.remove("no-scroll");
+    };
+  }, [showInternship, showSeniorProject]);
 
   const handleInternshipClick = () => {
+    setShowInternship(true);
+    setShowSeniorProject(false);
+  };
+
+  const handleSeniorProjectClick = () => {
+    setShowSeniorProject(true);
     setShowInternship(false);
   };
 
-  const handleCardClick = () => {
-    setShowInternship(true);
+  const handleBackgroundClick = () => {
+    setShowInternship(false);
+    setShowSeniorProject(false);
   };
 
   return (
@@ -25,7 +48,7 @@ export default function AboutMe() {
         <h1>My Experiences</h1>
       </div>
       <div className="cardShows">
-        {!showInternship ? (
+        {!showInternship && !showSeniorProject && (
           <>
             <CardKitchenSink
               titleName={"Internship (Programmer)"}
@@ -34,31 +57,33 @@ export default function AboutMe() {
               }
               cardImg={Internship}
               className="card"
-              onButtonClick={handleCardClick}
+              onButtonClick={handleInternshipClick}
             />
             <CardKitchenSink
               titleName={"Senior Project"}
               cardText={"Treepaech"}
               cardImg={cat}
               className="card"
+              onButtonClick={handleSeniorProjectClick}
             />
             <CardKitchenSink
               titleName={"Gun Test"}
               cardText={"Treepaech"}
               cardImg={cat}
               className="card"
+              onButtonClick={handleBackgroundClick}
             />
             <CardKitchenSink
               titleName={"Gun Test"}
               cardText={"Treepaech"}
               cardImg={cat}
               className="card"
+              onButtonClick={handleBackgroundClick}
             />
           </>
-        ) : null}
-        {showInternship ? (
-          <InternshipPage onClick={handleInternshipClick} />
-        ) : null}
+        )}
+        {showInternship && <InternshipPage onClick={handleBackgroundClick} />}
+        {showSeniorProject && <SeniorProject onClick={handleBackgroundClick} />}
       </div>
     </>
   );

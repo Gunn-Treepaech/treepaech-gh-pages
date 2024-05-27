@@ -6,8 +6,8 @@ export default function CardKitchenSink({ titleName, cardText, cardImg, onButton
     <Card style={{ width: "15rem" }}>
       <Card.Img variant="top" src={cardImg} />
       <Card.Body>
-        <Card.Title>{titleName}</Card.Title>
-        <Card.Text>
+        <Card.Title className="cardHead">{titleName}</Card.Title>
+        <Card.Text className="cardText">
           {cardText}
         </Card.Text>
       </Card.Body>

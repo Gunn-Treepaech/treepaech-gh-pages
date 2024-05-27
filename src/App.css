@@ -7,3 +7,7 @@
     rgba(148, 187, 233, 1) 100%
   );
 }
+
+.no-scroll {
+  overflow: hidden;
+}

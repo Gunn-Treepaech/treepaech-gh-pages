@@ -24,9 +24,22 @@
   margin: 10px 0;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 @media (max-width: 768px) {
   .cardShows .card {
     flex: 1 1 50%;
-    max-width: 50%;
+    max-width: 80%;
+  }
+  .cardText{
+    font-size: small;
+  }
+  .cardHead{
+    font-size: medium;
+  }
+  .cardButton {
+    width: 100%;
   }
 }

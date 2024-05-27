@@ -20,7 +20,7 @@ export default function Navbar_component({ homeRef, aboutRef }) {
     <>
       <Navbar
         expand="lg"
-        className="bg-body-tertiary"
+        className="Navbar bg-body-tertiary"
         data-bs-theme="dark"
         fixed="top"
       >

@@ -1,5 +1,4 @@
-/* InternshipPage.css */
-.internship {
+.SeniorProject{
     position: fixed;
     top: 0;
     bottom: 0;
@@ -9,11 +8,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
 }
 
-.internship-bg {
-    background-color: rgba(0, 0, 0, 0.91);
+.SeniorProject-bg{
+    background-color: rgba(0, 0, 0, 0.826);
     position: absolute;
     top: 0;
     bottom: 0;
@@ -21,21 +19,18 @@
     right: 0;
 }
 
-.internship-content {
+.SeniorProject-content{
     position: relative;
     max-width: 1200px;
     background-color: black;
     overflow-y: auto;
-    height: 90vh;
-    padding: 20px;
-    z-index: 1000;
-    border-radius: 8px;
+    height: 100vh;
 }
 
-.internship-content img {
+.SeniorProject-content img {
     display: block;
     max-width: 100%;
     max-height: calc(100vh - 120px);
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto
 }
