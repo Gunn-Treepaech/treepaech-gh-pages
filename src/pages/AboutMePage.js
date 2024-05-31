@@ -4,6 +4,7 @@ import "./AboutMePage.css";
 import CardKitchenSink from "../components/CardKitchenSink";
 import InternshipPage from "./InternshipPage";
 import SeniorProject from "./SeniorProject";
+import ProjectCloudApp from "./ProjectCloudApp";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 // Images
@@ -14,6 +15,7 @@ import SeniorProjectImg from "../image/SeniorProjectImg.png";
 export default function AboutMe() {
   const [showInternship, setShowInternship] = useState(false);
   const [showSeniorProject, setShowSeniorProject] = useState(false);
+  const [showProjectCloudApp, setShowProjectCloudApp] = useState(false);
 
   useEffect(() => {
     if (showInternship || showSeniorProject) {
@@ -38,15 +40,27 @@ export default function AboutMe() {
     setShowInternship(false);
   };
 
+  const handleProjectCloudAppClick = () => {
+    setShowSeniorProject(false);
+    setShowInternship(false);
+    setShowProjectCloudApp(true);
+  };
+
   const handleBackgroundClick = (e) => {
     // console.log("Event:", e);
     // console.log("Event target:", e.target);
-    if (e.target.classList.contains("bg") || e.target.classList.contains("btn-close")) {
+    if (
+      e.target.classList.contains("bg") ||
+      e.target.classList.contains("btn-close")
+    ) {
       if (showInternship) {
         setShowInternship(false);
       }
       if (showSeniorProject) {
         setShowSeniorProject(false);
+      }
+      if (showProjectCloudApp) {
+        setShowProjectCloudApp(false);
       }
     }
   };
@@ -57,7 +71,7 @@ export default function AboutMe() {
         <h1>My Experiences</h1>
       </div>
       <div className="cardShows">
-        {!showInternship && !showSeniorProject && (
+        {!showInternship && !showSeniorProject && !showProjectCloudApp && (
           <>
             <CardKitchenSink
               titleName={"Internship (Programmer)"}
@@ -71,18 +85,18 @@ export default function AboutMe() {
             <CardKitchenSink
               titleName={"Senior Project"}
               cardText={
-                "In this project, we test the performance of three types of CNI: Calico, Flannel, and Cilium. we conducted performance tests using physical devices, specifically Raspberry Pi 4                                                              "
+                "In this project, we test the performance of three types of CNI: Calico, Flannel, and Cilium. we conducted performance tests using physical devices, specifically Raspberry Pi 4"
               }
               cardImg={SeniorProjectImg}
               className="card"
               onButtonClick={handleSeniorProjectClick}
             />
             <CardKitchenSink
-              titleName={"Gun Test"}
+              titleName={"Project Cloud App"}
               cardText={"Treepaech"}
               cardImg={cat}
               className="card"
-              onButtonClick={handleBackgroundClick}
+              onButtonClick={handleProjectCloudAppClick}
             />
             <CardKitchenSink
               titleName={"Gun Test"}
@@ -95,6 +109,9 @@ export default function AboutMe() {
         )}
         {showInternship && <InternshipPage onClick={handleBackgroundClick} />}
         {showSeniorProject && <SeniorProject onClick={handleBackgroundClick} />}
+        {showProjectCloudApp && (
+          <ProjectCloudApp onClick={handleBackgroundClick} />
+        )}
       </div>
     </>
   );

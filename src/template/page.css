@@ -1,0 +1,91 @@
+/* ProjectCloudApp.css */
+.ProjectCloudApp {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .contentHead h3 {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+  }
+  
+  .contentHead h5 {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .bg {
+    background-color: rgba(0, 0, 0, 0.91);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  .content {
+    position: relative;
+    max-width: 800px;
+    background-color: white;
+    overflow-y: auto;
+    height: 85vh;
+    padding: 20px;
+    z-index: 1000;
+    border-radius: 8px;
+  }
+  
+  .closeButton {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .content img {
+    display: block;
+    /* width: 50%;
+        height: 100%; */
+    margin-left: auto;
+    margin-right: auto;
+    border-style: dotted;
+    border-radius: 3%;
+  }
+  
+  .content p {
+    color: black;
+    justify-content: center;
+    display: flex;
+    margin: 20px 0 20px 0;
+  }
+  
+  .content a {
+    color: black;
+    justify-content: center;
+    display: flex;
+    margin: 20px 0 20px 0;
+    font-weight: bolder;
+    text-decoration: none;
+  }
+  
+  .divButton {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .content img {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  
