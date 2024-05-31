@@ -12,8 +12,8 @@ export default function ProjectCloudApp({ onClick }) {
           <div className="closeButton">
             <CloseButton />
           </div>
-          <h3>Container Network Interface (CNI) study and testing</h3>
-          <h5>Senior Project | Khon Kaen University</h5>
+          <h3>Home Loan Simulation Web Application</h3>
+          <h5>Project Cloud App | Khon Kaen University</h5>
         </div>
         <img src={cat} alt="cat" />
         <p>Container Network Interface (CNI) study and testing details...</p>
