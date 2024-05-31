@@ -7,8 +7,9 @@ import SeniorProject from "./SeniorProject";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 // Images
-import Internship from "../image/Internship.jpg";
+import InternshipImg from "../image/Internship.jpg";
 import cat from "../image/cat3.jpeg";
+import SeniorProjectImg from "../image/SeniorProjectImg.png";
 
 export default function AboutMe() {
   const [showInternship, setShowInternship] = useState(false);
@@ -55,14 +56,16 @@ export default function AboutMe() {
               cardText={
                 'Developed a website to display and store IoT device data. Assisted in training on IoT control system design and installation. Tested, improved, and corrected code examples in the book "Developing IoT on ESP32 Microcontroller with MicroPython."'
               }
-              cardImg={Internship}
+              cardImg={InternshipImg}
               className="card"
               onButtonClick={handleInternshipClick}
             />
             <CardKitchenSink
               titleName={"Senior Project"}
-              cardText={"Treepaech"}
-              cardImg={cat}
+              cardText={
+                "In this project, we test the performance of three types of CNI: Calico, Flannel, and Cilium. we conducted performance tests using physical devices, specifically Raspberry Pi 4                                                              "
+              }
+              cardImg={SeniorProjectImg}
               className="card"
               onButtonClick={handleSeniorProjectClick}
             />

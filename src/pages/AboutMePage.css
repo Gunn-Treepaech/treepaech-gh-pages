@@ -22,6 +22,12 @@
   width: 100%;
 }
 
+.card img {
+  height: 200px; /* Set the height you desire */
+  width: 100%;
+  object-fit: cover;
+}
+
 .cardShows .card {
   flex: 1 1 20px;
   max-width: 300px;

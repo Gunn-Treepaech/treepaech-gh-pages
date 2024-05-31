@@ -1,56 +1,85 @@
 /* InternshipPage.css */
 .internship {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 999;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.contentHead h3 {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.contentHead h5 {
+  display: flex;
+  justify-content: center;
+}
+
+.contentHead h6 {
+  display: flex;
+  justify-content: center;
 }
 
 .internship-bg {
-    background-color: rgba(0, 0, 0, 0.91);
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+  background-color: rgba(0, 0, 0, 0.91);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .internship-content {
-    position: relative;
-    max-width: 1500px;
-    background-color: black;
-    overflow-y: auto;
-    height: 80vh;
-    padding: 20px;
-    z-index: 1000;
-    border-radius: 8px;
+  position: relative;
+  max-width: 1500px;
+  background-color: white;
+  overflow-y: auto;
+  height: 80vh;
+  padding: 20px;
+  z-index: 1000;
+  border-radius: 8px;
 }
 
 .internship-content img {
+  display: block;
+  width: 100%;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: dotted;
+  border-radius: 3%;
+}
+
+.internship-content p {
+  color: black;
+  justify-content: center;
+  display: flex;
+  margin: 20px 0 20px 0;
+}
+
+.headOrder {
+  font-weight: bolder;
+}
+.internship-content a {
+  color: black;
+  justify-content: center;
+  display: flex;
+  margin: 20px 0 20px 0;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .internship-content img {
     display: block;
-    max-width: 100%;
-    max-height: calc(100vh - 120px);
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.internship-content p{
-    color: white;
-    justify-content: center;
-    display: flex;
-    margin: 20px 0 20px 0;
-}
-
-.internship-content a{
-    color: white;
-    justify-content: center;
-    display: flex;
-    margin: 20px 0 20px 0;
-    font-weight: bolder;
+    width: 100%;
+    height: 60%;
+  }
 }
