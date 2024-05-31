@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/treepaech-gh-pages/static/css/main.d6acfebf.css",
-    "main.js": "/treepaech-gh-pages/static/js/main.e7052f86.js",
-    "static/js/453.594335cf.chunk.js": "/treepaech-gh-pages/static/js/453.594335cf.chunk.js",
-    "static/media/Internship_ALL.png": "/treepaech-gh-pages/static/media/Internship_ALL.dfc5c3817647383bdcfa.png",
-    "static/media/RS485.png": "/treepaech-gh-pages/static/media/RS485.7fd21069c65d9ee37444.png",
-    "static/media/book.jpg": "/treepaech-gh-pages/static/media/book.08b2412d21049969659d.jpg",
-    "static/media/Internship.jpg": "/treepaech-gh-pages/static/media/Internship.b545297482fdaadad52d.jpg",
-    "static/media/Aruba.png": "/treepaech-gh-pages/static/media/Aruba.a6d39fef72979e514e0b.png",
-    "static/media/cat3.jpeg": "/treepaech-gh-pages/static/media/cat3.53b768d5e219210a19a0.jpeg",
-    "index.html": "/treepaech-gh-pages/index.html",
-    "main.d6acfebf.css.map": "/treepaech-gh-pages/static/css/main.d6acfebf.css.map",
-    "main.e7052f86.js.map": "/treepaech-gh-pages/static/js/main.e7052f86.js.map",
-    "453.594335cf.chunk.js.map": "/treepaech-gh-pages/static/js/453.594335cf.chunk.js.map"
+    "main.css": "/static/css/main.d6acfebf.css",
+    "main.js": "/static/js/main.29b67d30.js",
+    "static/js/453.594335cf.chunk.js": "/static/js/453.594335cf.chunk.js",
+    "static/media/Internship_ALL.png": "/static/media/Internship_ALL.dfc5c3817647383bdcfa.png",
+    "static/media/RS485.png": "/static/media/RS485.7fd21069c65d9ee37444.png",
+    "static/media/book.jpg": "/static/media/book.08b2412d21049969659d.jpg",
+    "static/media/Internship.jpg": "/static/media/Internship.b545297482fdaadad52d.jpg",
+    "static/media/Aruba.png": "/static/media/Aruba.a6d39fef72979e514e0b.png",
+    "static/media/cat3.jpeg": "/static/media/cat3.53b768d5e219210a19a0.jpeg",
+    "index.html": "/index.html",
+    "main.d6acfebf.css.map": "/static/css/main.d6acfebf.css.map",
+    "main.29b67d30.js.map": "/static/js/main.29b67d30.js.map",
+    "453.594335cf.chunk.js.map": "/static/js/453.594335cf.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d6acfebf.css",
-    "static/js/main.e7052f86.js"
+    "static/js/main.29b67d30.js"
   ]
 }
