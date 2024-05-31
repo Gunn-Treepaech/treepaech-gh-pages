@@ -28,7 +28,7 @@
   justify-content: center;
 }
 
-.internship-bg {
+.bg {
   background-color: rgba(0, 0, 0, 0.91);
   position: absolute;
   top: 0;
@@ -42,7 +42,7 @@
   max-width: 1500px;
   background-color: white;
   overflow-y: auto;
-  height: 80vh;
+  height: 85vh;
   padding: 20px;
   z-index: 1000;
   border-radius: 8px;
@@ -74,6 +74,11 @@
   display: flex;
   margin: 20px 0 20px 0;
   text-decoration: none;
+}
+
+.closeButton{
+  display: flex;
+  justify-content: flex-end;
 }
 
 @media (max-width: 768px) {

@@ -2,6 +2,7 @@
 import React from "react";
 import "./SeniorProject.css";
 import Button from "react-bootstrap/Button";
+import CloseButton from "react-bootstrap/CloseButton";
 
 //Images
 import SeniorProjectImg from "../image/SeniorProject/SeniorProject (Small).png";
@@ -10,9 +11,12 @@ import ReportImg from "../image/SeniorProjectImg.png";
 export default function SeniorProject({ onClick }) {
   return (
     <div className="SeniorProject" onClick={onClick}>
-      <div className="SeniorProject-bg" onClick={onClick} />
+      <div className="bg" onClick={onClick} />
       <div className="SeniorProject-content">
         <div className="contentHead">
+          <div className="closeButton">
+            <CloseButton />
+          </div>
           <h3>Container Network Interface (CNI) study and testing</h3>
           <h5>Senior Project | Khon Kaen University</h5>
         </div>

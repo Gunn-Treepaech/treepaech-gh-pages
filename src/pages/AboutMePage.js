@@ -38,9 +38,17 @@ export default function AboutMe() {
     setShowInternship(false);
   };
 
-  const handleBackgroundClick = () => {
-    setShowInternship(false);
-    setShowSeniorProject(false);
+  const handleBackgroundClick = (e) => {
+    // console.log("Event:", e);
+    // console.log("Event target:", e.target);
+    if (e.target.classList.contains("bg") || e.target.classList.contains("btn-close")) {
+      if (showInternship) {
+        setShowInternship(false);
+      }
+      if (showSeniorProject) {
+        setShowSeniorProject(false);
+      }
+    }
   };
 
   return (

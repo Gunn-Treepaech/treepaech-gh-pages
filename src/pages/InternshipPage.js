@@ -2,6 +2,7 @@
 import React from "react";
 import "./InternshipPage.css";
 import Button from "react-bootstrap/Button";
+import CloseButton from "react-bootstrap/CloseButton";
 
 //Images
 import InternshipALL from "../image/Internship/Internship_ALL.png";
@@ -12,9 +13,12 @@ import ARUBA from "../image/Internship/Aruba.png";
 export default function InternshipPage({ onClick }) {
   return (
     <div className="internship" onClick={onClick}>
-      <div className="internship-bg" onClick={onClick} />
+      <div className="bg" onClick={onClick} />
       <div className="internship-content">
         <div className="contentHead">
+          <div className="closeButton">
+            <CloseButton />
+          </div>
           <h3>Internship (Programmer)</h3>
           <h5>PlaySmart IoT and Systems Company | Khon Kaen</h5>
           <h6>April - June 2023 (2 months)</h6>
