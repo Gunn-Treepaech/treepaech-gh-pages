@@ -1,7 +1,8 @@
+/* AboutMePage.css */
 .aboutSec {
   display: flex;
   justify-content: center;
-  margin-top: 225px;
+  margin-top: 100px;
   margin-bottom: 50px;
 }
 
@@ -29,7 +30,7 @@
 }
 
 .cardShows .card {
-  flex: 1 1 20px;
+  flex: 1 1 calc(25% - 40px);
   max-width: 300px;
   margin: 10px 0;
 }
@@ -43,10 +44,10 @@
     flex: 1 1 50%;
     max-width: 80%;
   }
-  .cardText{
+  .cardText {
     font-size: small;
   }
-  .cardHead{
+  .cardHead {
     font-size: medium;
   }
   .cardButton {

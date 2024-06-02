@@ -1,0 +1,80 @@
+/* Ble.css */
+.Ble {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.video-sec{
+    display: flex;
+    justify-content: center;
+}
+
+.Ble-contentHead h3 {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.Ble-contentHead h5 {
+  display: flex;
+  justify-content: center;
+}
+
+.Ble-content h3 {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    font-weight: bolder;
+  }
+
+.bg {
+  background-color: rgba(0, 0, 0, 0.91);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.Ble-content {
+  position: relative;
+  max-width: 800px;
+  background-color: white;
+  overflow-y: auto;
+  height: 85vh;
+  padding: 20px;
+  z-index: 1000;
+  border-radius: 8px;
+}
+
+.Ble-closeButton {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.Ble-content a {
+  color: black;
+  justify-content: center;
+  display: flex;
+  margin: 20px 0 20px 0;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+.Ble-divButton {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+}

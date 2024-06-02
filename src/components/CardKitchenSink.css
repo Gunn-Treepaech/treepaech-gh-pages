@@ -1,0 +1,17 @@
+.cardContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20rem; /* Set a fixed height for all cards */
+  }
+  
+  .cardBody {
+    flex-grow: 1;
+  }
+  
+  .cardButtonContainer {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: auto;
+  }
+  

@@ -1,5 +1,6 @@
 import Card from "react-bootstrap/Card";
 import Button from 'react-bootstrap/Button';
+import "./CardKitchenSink.css"
 
 export default function CardKitchenSink({ titleName, cardText, cardImg, onButtonClick }) {
   return (

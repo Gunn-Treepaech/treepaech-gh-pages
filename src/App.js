@@ -13,10 +13,11 @@ export default function App() {
   return (
     <div className="app">
       <Navbars homeRef={homeRef} aboutRef={aboutRef} />
-      <div id="home" ref={homeRef} className="homeSec">
+      <div ref={homeRef} className="homeSec">
         <AboutMeTXT />
       </div>
-      <div id="about" ref={aboutRef}>
+      <div>
+        <div ref={aboutRef} className="aboutSec"></div>
         <AboutMePage />
       </div>
     </div>

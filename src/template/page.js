@@ -3,6 +3,9 @@ import CloseButton from "react-bootstrap/CloseButton";
 import "../pages/ProjectCloudApp.css";
 import cat from "../image/cat3.jpeg";
 
+//Images
+import ProjectCloudAppImg1 from "../image/ProjectCloudApp/1.png";
+
 export default function ProjectCloudApp({ onClick }) {
   return (
     <div className="ProjectCloudApp" onClick={onClick}>
@@ -17,7 +20,6 @@ export default function ProjectCloudApp({ onClick }) {
         </div>
         <img src={cat} alt="cat" />
         <p>Container Network Interface (CNI) study and testing details...</p>
-        <img src={cat} alt="cat" />
         <div className="divButton">
           <a
             href="https://github.com/Gunn-Treepaech/CNI_Project.git"

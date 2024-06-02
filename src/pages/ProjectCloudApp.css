@@ -12,13 +12,13 @@
   overflow: hidden;
 }
 
-.contentHead h3 {
+.ProjectCloudApp-contentHead h3 {
   display: flex;
   justify-content: center;
   font-weight: bold;
 }
 
-.contentHead h5 {
+.ProjectCloudApp-contentHead h5 {
   display: flex;
   justify-content: center;
 }
@@ -32,9 +32,9 @@
   right: 0;
 }
 
-.content {
+.ProjectCloudApp-content {
   position: relative;
-  max-width: 800px;
+  width: 1000px;
   background-color: white;
   overflow-y: auto;
   height: 85vh;
@@ -43,29 +43,28 @@
   border-radius: 8px;
 }
 
-.closeButton {
+.ProjectCloudApp-closeButton {
   display: flex;
   justify-content: flex-end;
 }
 
-.content img {
+.ProjectCloudApp-content img {
   display: block;
-  /* width: 50%;
-      height: 100%; */
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
   border-style: dotted;
   border-radius: 3%;
 }
 
-.content p {
+.ProjectCloudApp-content p {
   color: black;
   justify-content: center;
   display: flex;
   margin: 20px 0 20px 0;
 }
 
-.content a {
+.ProjectCloudApp-content a {
   color: black;
   justify-content: center;
   display: flex;
@@ -74,7 +73,7 @@
   text-decoration: none;
 }
 
-.divButton {
+.ProjectCloudApp-divButton {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -82,7 +81,7 @@
 }
 
 @media (max-width: 768px) {
-  .content img {
+  .ProjectCloudApp-content img {
     display: block;
     width: 100%;
     height: 100%;

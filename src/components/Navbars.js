@@ -33,7 +33,7 @@ export default function Navbar_component({ homeRef, aboutRef }) {
             <Nav className="ms-auto">
               <Nav.Link onClick={() => scrollToSection(homeRef)}>Home</Nav.Link>
               <Nav.Link onClick={() => scrollToSection(aboutRef)}>
-                About Me
+                My Experiences
               </Nav.Link>
               <Button
                 className="contactButton"

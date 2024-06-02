@@ -34,6 +34,10 @@
   .aboutMetxt p {
     font-size: 0.5rem; /* Adjusted font size for smaller screens */
   }
+
+  .homeSec {
+    padding-top: 60px;
+  }
 }
 
 @media (max-width: 480px) {
