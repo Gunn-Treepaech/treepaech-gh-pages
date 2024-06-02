@@ -85,7 +85,7 @@ export default function AboutMe() {
             <CardKitchenSink
               titleName={"Senior Project"}
               cardText={
-                "In this project, we test the performance of three types of CNI: Calico, Flannel, and Cilium. we conducted performance tests using physical devices, specifically Raspberry Pi 4"
+                "In this project, we test the performance of three CNI types: Calico, Flannel, and Cilium. We perform performance tests using physical devices, specifically a Raspberry Pi 4 and a virtual simulator."
               }
               cardImg={SeniorProjectImg}
               className="card"
@@ -93,7 +93,9 @@ export default function AboutMe() {
             />
             <CardKitchenSink
               titleName={"Project Cloud App"}
-              cardText={"Treepaech"}
+              cardText={
+                "a web application that simulates a 3-year home loan repayment plan, generating monthly reports on repayment, interest payments, principal payments, and remaining balance. Users can select from four preloaded interest rates from banks stored in the database or input their rates."
+              }
               cardImg={cat}
               className="card"
               onButtonClick={handleProjectCloudAppClick}
