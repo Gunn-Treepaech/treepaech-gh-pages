@@ -12,9 +12,9 @@
   overflow: hidden;
 }
 
-.video-sec{
-    display: flex;
-    justify-content: center;
+.video-sec {
+  display: flex;
+  justify-content: center;
 }
 
 .Ble-contentHead h3 {
@@ -29,11 +29,11 @@
 }
 
 .Ble-content h3 {
-    margin-top: 60px;
-    display: flex;
-    justify-content: center;
-    font-weight: bolder;
-  }
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  font-weight: bolder;
+}
 
 .bg {
   background-color: rgba(0, 0, 0, 0.91);
@@ -51,6 +51,7 @@
   overflow-y: auto;
   height: 85vh;
   padding: 20px;
+  padding-top: 30px;
   z-index: 1000;
   border-radius: 8px;
 }
@@ -74,7 +75,4 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
-}
-
-@media (max-width: 768px) {
 }

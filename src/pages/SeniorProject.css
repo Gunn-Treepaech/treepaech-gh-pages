@@ -39,11 +39,12 @@
   overflow-y: auto;
   height: 85vh;
   padding: 20px;
+  padding-top: 30px;
   z-index: 1000;
   border-radius: 8px;
 }
 
-.closeButton{
+.closeButton {
   display: flex;
   justify-content: flex-end;
 }
@@ -74,11 +75,11 @@
   text-decoration: none;
 }
 
-.divButton{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
+.divButton {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 @media (max-width: 768px) {
