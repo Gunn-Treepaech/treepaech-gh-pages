@@ -1,12 +1,15 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./AboutMeTXT.css";
+import Button from 'react-bootstrap/Button';
+import Resume from "../Documents/Treepaech_Resume.pdf"
+import CV from "../Documents/Treepaech_CV.pdf"
 
 export default function AboutMeTXt() {
   return (
     <div className="homeSec">
-      <h1 className="aboutMetxt">Hello!!!</h1>
-      <h1 className="aboutMetxt">My Name Is </h1>
-      <h1 className="aboutMetxt">Treepaech Treechan</h1>
+      <h1 className="aboutMetxtHead">Hello!!!</h1>
+      <h1 className="aboutMetxtHead">My Name Is </h1>
+      <h1 className="aboutMetxtHead">Treepaech Treechan</h1>
       <p className="aboutMetxt">
         A recent graduate with a Bachelor's degree in Computer Engineering from
         Khon Kaen University, who is determined to apply the knowledge gained
@@ -19,6 +22,14 @@ export default function AboutMeTXt() {
         grow with the organization, while being enthusiastic about learning new
         skills in the future.
       </p>
+      <div className="downloadButton">
+        <a href={Resume} download="Treepaech_Resume.pdf" target="_blank" rel="noreferrer">
+          <Button variant="primary" className="download">Download Resume</Button>
+        </a>
+        <a href={CV} download="Treepaech_CV.pdf" target="_blank" rel="noreferrer">
+          <Button variant="primary" className="download">Download CV</Button>
+        </a>
+      </div>
     </div>
   );
 }

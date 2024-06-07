@@ -72,6 +72,14 @@ export default function Offcanva({ show, handleClose }) {
               </Form>
             </div>
           </div>
+          <div className="contact">
+          <p>
+            <span style={{ fontWeight: "bolder" }}>E-mail: </span> g.treepaech@gmail.com
+          </p>
+          <p>
+            <span style={{ fontWeight: "bolder" }}>Phone: </span> 061-084-1503
+          </p>
+          </div>
           <div className="social">
             <SocialFollow />
           </div>

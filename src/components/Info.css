@@ -1,0 +1,44 @@
+.infoSec {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.infoSec h1 {
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  text-shadow: 2px 2px rgb(85, 84, 84);
+}
+
+.infoContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.infoText {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  flex: 1;
+  padding-left: 200px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 500;
+  font-size: 23px;
+  text-shadow: 1px 1px rgb(85, 84, 84);
+}
+
+.infoImg {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.myImg {
+  max-width: 50%;
+  max-height: 50%;
+  filter: drop-shadow(8px 8px 10px black);
+  border-radius: 20px;
+}

@@ -14,3 +14,9 @@
 .form-container{
     font-weight: bold;
 }
+
+.contact{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+}

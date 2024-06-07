@@ -6,7 +6,7 @@ import { useState } from "react";
 import "./Navbars.css";
 import Button from "react-bootstrap/Button";
 
-export default function Navbar_component({ homeRef, aboutRef }) {
+export default function Navbar_component({ homeRef, aboutRef, infoRef }) {
   const [showOffcanvas, setShowOffcanvas] = useState(false);
 
   const handleShowOffcanvas = () => setShowOffcanvas(true);
@@ -32,6 +32,7 @@ export default function Navbar_component({ homeRef, aboutRef }) {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
               <Nav.Link onClick={() => scrollToSection(homeRef)}>Home</Nav.Link>
+              <Nav.Link onClick={() => scrollToSection(infoRef)}>About</Nav.Link>
               <Nav.Link onClick={() => scrollToSection(aboutRef)}>
                 My Experiences
               </Nav.Link>
