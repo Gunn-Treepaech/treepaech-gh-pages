@@ -44,7 +44,7 @@
   overflow-y: auto;
   height: 85vh;
   padding: 20px;
-  padding-top: 30px;
+  margin-top: 70px;
   z-index: 1000;
   border-radius: 8px;
 }
