@@ -42,3 +42,19 @@
   filter: drop-shadow(8px 8px 10px black);
   border-radius: 20px;
 }
+
+@media (max-width: 768px) {
+  .infoText{
+    font-size: 1rem;
+    padding-left: 70px;
+  }
+
+  .infoContainer{
+    flex-direction: column;
+  }
+
+  .infoSec {
+    margin-top: 80px;
+    margin-bottom: 20px;
+  }
+}
