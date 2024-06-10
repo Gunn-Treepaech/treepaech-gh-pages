@@ -54,8 +54,10 @@
   width: 60%;
   margin-left: auto;
   margin-right: auto;
-  border-style: dotted;
-  border-radius: 3%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  box-shadow: 5px 5px rgb(78, 78, 78);
 }
 
 .ProjectACP-content p {
@@ -86,5 +88,9 @@
     display: block;
     width: 100%;
     height: 100%;
+  }
+
+  .ProjectACP-content{
+    width: 100%;
   }
 }

@@ -51,11 +51,13 @@
 
 .ProjectCloudApp-content img {
   display: block;
-  width: 80%;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
-  border-style: dotted;
-  border-radius: 3%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  box-shadow: 5px 5px rgb(78, 78, 78);
 }
 
 .ProjectCloudApp-content p {
