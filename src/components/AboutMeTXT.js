@@ -1,7 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./AboutMeTXT.css";
 import Button from 'react-bootstrap/Button';
-import Resume from "../Documents/Treepaech_Resume.pdf"
 import CV from "../Documents/Treepaech_CV.pdf"
 
 export default function AboutMeTXt() {
