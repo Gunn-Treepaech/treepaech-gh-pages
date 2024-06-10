@@ -6,9 +6,9 @@
 }
 
 .infoSec h1 {
-  font-family: "Oswald", sans-serif;
-  font-weight: bold;
-  text-shadow: 2px 2px rgb(85, 84, 84);
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 700;
+  /* text-shadow: 2px 2px rgb(85, 84, 84); */
 }
 
 .infoContainer {
@@ -24,10 +24,9 @@
   justify-content: start;
   flex: 1;
   padding-left: 200px;
-  font-family: "Courier New", Courier, monospace;
-  font-weight: 500;
+  font-family: "Chakra Petch", sans-serif;
   font-size: 23px;
-  text-shadow: 1px 1px rgb(85, 84, 84);
+  /* text-shadow: 1px 1px rgb(85, 84, 84); */
 }
 
 .infoImg {

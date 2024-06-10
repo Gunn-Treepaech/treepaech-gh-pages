@@ -34,7 +34,7 @@ export default function Navbar_component({ homeRef, aboutRef, infoRef }) {
               <Nav.Link onClick={() => scrollToSection(homeRef)}>Home</Nav.Link>
               <Nav.Link onClick={() => scrollToSection(infoRef)}>About</Nav.Link>
               <Nav.Link onClick={() => scrollToSection(aboutRef)}>
-                My Experiences
+                Experiences
               </Nav.Link>
               <Button
                 className="contactButton"

@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 100px;
+  padding-top: 130px;
 }
 
 .downloadButton {
@@ -12,12 +12,72 @@
   gap: 20px;
   margin-top: 30px;
   animation: slideIn 1s ease-in-out forwards;
-  cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><g fill="%23000"><path d="M18 7c-3 0-5.5-1.5-9 2s-2 6-2 9c0 5 4.1 5.63 6 5 3-1 1-3 4-6s5-1 6-4c.63-1.9 0-6-5-6Z"></path><circle cx="8.2" cy="4" r="2"></circle><circle cx="4" cy="8.2" r="2"></circle><circle cx="14" cy="3" r="2"></circle><circle cx="3" cy="14" r="2"></circle></g></svg>');
 }
 
-.download{
+.download {
+  font-weight: bolder;
+  width: 220px;
   height: 50px;
-  font-weight: bold;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.download:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 6px);
+  height: calc(100% + 6px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.download:active {
+  color: #000;
+}
+
+.download:active:after {
+  background: transparent;
+}
+
+.download:hover:before {
+  opacity: 1;
+}
+
+.download:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #0088ff;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
 }
 
 .aboutMetxt {
@@ -28,15 +88,37 @@
   padding-top: 20px;
 }
 
-.aboutMetxtHead{
-  font-family: "Oswald", sans-serif;
+.aboutMetxtHead {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  font-style: italic;
   width: 70%;
   animation: slideIn 1s ease-in-out forwards;
-  text-shadow: 2px 2px rgb(85, 84, 84);
+  /* text-shadow: 2px 2px rgb(85, 84, 84); */
 }
 
 .aboutMetxt p {
   font-size: large;
+}
+
+.animationName::before {
+  content: "My Name Is Treepaech Treechan";
+  animation: animate infinite 7s;
+}
+
+@keyframes animate {
+  0% {
+    content: "My Name Is Treepaech Treechan";
+  }
+
+  50% {
+    content: "I Am A New Graduate";
+  }
+
+  75% {
+    content: "From the Faculty of Computer Engineering";
+  }
 }
 
 @keyframes slideIn {
@@ -47,6 +129,18 @@
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
   }
 }
 
@@ -69,7 +163,6 @@
     gap: 20px;
     animation: slideIn 1s ease-in-out forwards;
   }
-
 }
 
 @media (max-width: 480px) {
