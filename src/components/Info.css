@@ -36,24 +36,69 @@
 }
 
 .myImg {
-  max-width: 50%;
+  max-width: 60%;
   max-height: 50%;
   filter: drop-shadow(8px 8px 10px black);
   border-radius: 20px;
 }
 
+.myImg:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
 @media (max-width: 768px) {
-  .infoText{
+  .infoText {
     font-size: 1rem;
     padding-left: 70px;
   }
 
-  .infoContainer{
+  .infoContainer {
     flex-direction: column;
   }
 
   .infoSec {
     margin-top: 80px;
     margin-bottom: 20px;
+  }
+
+  .infoImg {
+    margin-top: 50px;
   }
 }

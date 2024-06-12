@@ -83,6 +83,10 @@
   gap: 20px;
 }
 
+/* Download Button */
+
+/* End Download Button */
+
 @media (max-width: 768px) {
   .AIMiniproject-content img {
     display: block;
